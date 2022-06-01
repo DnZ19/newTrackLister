@@ -2,9 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Title</title>
 </head>
 <body>
 
+<wrapper class="outer-container">
+
+    <nav role="navigation" class="menuToggle">
+
+        <a href="home" class="active"><img
+                src="assets/Logo DnZ.svg" alt="Logo" id="logo"></a>
+
+        <ul id="myLinks">
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </nav>
+
+    <header class="inner-container">
+
+
+
+        <div class="logon-container">
+            <section>
+                <h1>Welcome to you Track Lister App</h1>
+                <p>The App for keeping up to speed with the top ten new music in your genre from different platforms </p>
+            </section>
+
+            <fieldset>
+                <legend>Login</legend>
+                <form action="" class="form">
+
+                    <div class="inner-form-container">
+                        <label for="userName">Username</label>
+                        <input type="text" id="userName" name="userName">
+
+                        <label for="passWord">Password</label>
+                        <input type="text" id="passWord" name="passWord">
+
+                        <label for="rememberMe" class="rememberMe">
+                            Remember me
+                            <input type="checkbox" class="rememberMe" id="rememberMe" name="rememberMe">
+                        </label>
+
+                    </div>
+
+
+                    <button type="submit" id="login-button">Login</button>
+
+                </form>
+
+
+            </fieldset>
+
+        </div>
+
+
+    </header>
+
+    <footer class="footer">
+
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-soundcloud"></a>
+
+
+    </footer>
+
+
+</wrapper>
+
+<script src="navigation.js"></script>
 </body>
 </html>

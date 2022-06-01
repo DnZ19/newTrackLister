@@ -1,0 +1,310 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+            4.1.1.  navigation
+
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+*   {
+    margin: 0;
+    padding: 0;
+}
+
+body    {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-basis: 1440px;
+    height: 1000px;
+    background-color: darkslategray;
+    color: white;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+.outer-container    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    max-width: 425px;
+
+    background-image: url("assets/Techno Background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 0 20px;
+
+    /*border: 1px solid blue;*/
+}
+
+.inner-container    {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    flex-basis: 425px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: transparent;
+    margin: 0 20px;
+
+    /*border: 1px solid orange;*/
+}
+
+
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+/*----------------- 4.1.1. Navigation---------------------------*/
+
+#logo   {
+    width: 60px;
+    height: 60px;
+    padding-top: 5px;
+}
+
+.menuToggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+ul  {
+    list-style-type: none;
+}
+
+ul a    {
+    text-decoration: none;
+}
+
+.menuToggle {
+    overflow: hidden;
+    background-color: #020202;
+    position: relative;
+}
+
+.menuToggle #myLinks {
+    display: none;
+}
+
+#myLinks  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 425px;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.icon   {
+    padding: 10px;
+}
+
+.menuToggle a {
+    float: left;
+    color: white;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+    /*font-size: 25px;*/
+    font-weight: lighter;
+}
+
+.menuToggle a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+
+/*form*/
+
+.logon-container    {
+    margin-top: 75px;
+}
+
+.inner-container h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+.inner-container p  {
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+
+fieldset    {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.5em;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 300px;
+}
+
+.form   {
+    font-size: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 16px;
+}
+
+.inner-form-container   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+
+}
+
+.rememberMe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#rememberMe {
+    margin-left: 5px;
+}
+
+#userName {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+#passWord {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+#login-button  {
+    width: 200px;
+    border-radius: 30px;
+    /*margin-left: 25%;*/
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: lighter;
+    border: none;
+    background-color: orange;
+    box-shadow: 5px 10px 10px black;
+    cursor: pointer;
+
+}
+
+
+
+
+/* --------------- 4.2 footer ------------------- */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #020202;
+}
+
+.fa {
+    margin: 5px;
+    padding: 15px;
+    display:flex;
+    align-items:center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    width: 14px;
+    text-align: center;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    color: white;
+}
+
+/* SoundCloud */
+.fa-soundcloud {
+    background: orange;
+    color: white;
+}
+
+
+
+
+
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
